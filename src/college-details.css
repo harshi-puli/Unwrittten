@@ -1,0 +1,148 @@
+.college-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
+}
+
+.college-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 22px;
+  cursor: default;
+}
+
+.college-open {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+}
+
+.college-title div b {
+  margin-top: 1px;
+  color: var(--dark);
+  font-size: 14px;
+}
+
+.requirements-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.requirements-heading > span {
+  color: var(--dark);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.requirements-heading small {
+  color: var(--muted);
+  text-align: right;
+}
+
+.requirements-list {
+  display: grid;
+  gap: 10px;
+}
+
+.requirement-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--dark);
+  font-size: 14px;
+}
+
+.requirement-status {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.requirement-status.complete {
+  color: #267158;
+  background: #e8f2e8;
+}
+
+.requirement-status.progress {
+  color: #365c8b;
+  background: #e9f0f8;
+}
+
+.requirement-status.warning {
+  color: #8a6423;
+  background: #f7efd9;
+}
+
+.requirement-status.neutral {
+  color: #68746e;
+  background: #eff0eb;
+}
+
+.next-action {
+  width: 100%;
+  margin-top: auto;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--mint);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.next-action span {
+  display: grid;
+  gap: 4px;
+}
+
+.next-action small {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+.next-action strong {
+  color: var(--green);
+  line-height: 1.35;
+}
+
+.next-action b {
+  font-size: 20px;
+}
+
+.college-grid.expanded {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media (max-width: 760px) {
+  .college-grid,
+  .college-grid.expanded {
+    grid-template-columns: 1fr;
+  }
+
+  .requirements-heading,
+  .requirement-row {
+    align-items: flex-start;
+  }
+}
