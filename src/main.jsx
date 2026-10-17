@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import DashboardV2 from './DashboardV2.jsx';
-import './dashboard-v2.css';
+import UnwrittenHackathon from './UnwrittenHackathon.jsx';
+import './unwritten.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DashboardV2 />
+    <UnwrittenHackathon />
   </React.StrictMode>,
 );
