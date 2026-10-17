@@ -1,23 +1,23 @@
-# Unwritten
+# CampusKey
 
-**Unlock the rules no one taught you.**
+> **Unlock the college rules no one taught you.**
 
-Unwritten is an Inclusion & Accessibility prototype that helps first-generation and other under-supported students understand unfamiliar academic requirements, reveal hidden expectations, create manageable plans, and write informed application materials.
+CampusKey is an Inclusion & Accessibility prototype that helps first-generation and other under-supported students understand unfamiliar college requirements, reveal hidden expectations, create manageable plans, and write informed application materials.
 
 ## Live Superhuman Go integration
 
-The installed Superhuman Go agent **Unwritten** is the live intelligence layer. It can use selected text and current browser context to:
+The installed Superhuman Go agent **CampusKey** is the live intelligence layer. It can use selected text and current browser context to:
 
-- Decode academic requirements
+- Decode college and opportunity requirements
 - Reveal hidden expectations
 - Identify missing or unverified context
 - Generate prioritized action plans
-- Support recommendation requests and academic writing
-- Write approved application and task updates into the connected Unwritten Superhuman Docs workspace
+- Support recommendation requests and application writing
+- Write approved application and task updates into the connected Superhuman Docs workspace
 
 All Superhuman Docs writes are review-gated. The student sees and approves proposed changes before they are saved.
 
-The React dashboard is a separate prototype interface and does not claim automatic synchronization with Superhuman Docs. A consolidated **Unwritten** action hub clearly separates the real Go agent and shared Docs workspace from local website tools.
+The React dashboard is a separate prototype interface and does not claim automatic synchronization with Superhuman Docs. A consolidated **CampusKey** action hub clearly separates the real Go agent and shared Docs workspace from local website tools.
 
 ## Grammarly integration
 
@@ -40,11 +40,11 @@ The prototype does not claim to invoke an unavailable private Grammarly API. The
 
 ## Shared live workspace
 
-The real Unwritten agent uses the connected Superhuman Docs workspace for review-gated application and task updates:
+The real CampusKey agent uses the connected Superhuman Docs workspace for review-gated application and task updates:
 
 https://docs.superhuman.com/d/_dYWROezv3v9
 
-The website’s **Unwritten** action hub links directly to both the live agent and this workspace.
+The website’s **CampusKey** action hub links directly to both the live agent and this workspace.
 
 ## Run locally
 
