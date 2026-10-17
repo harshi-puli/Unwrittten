@@ -1,0 +1,31 @@
+.url-import-launcher {
+  right: 18px;
+  bottom: 18px;
+}
+
+.go-orb {
+  right: 18px;
+  bottom: 76px;
+}
+
+.essay-launcher {
+  right: 18px;
+  bottom: 148px;
+}
+
+@media (max-width: 720px) {
+  .url-import-launcher {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .go-orb {
+    right: 12px;
+    bottom: 68px;
+  }
+
+  .essay-launcher {
+    right: 12px;
+    bottom: 136px;
+  }
+}
