@@ -7,6 +7,7 @@ import './url-importer-review.css';
 import './go-inline.css';
 import './grammarly-essay.css';
 import './floating-controls.css';
+import './application-manager.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
