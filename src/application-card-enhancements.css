@@ -1,0 +1,37 @@
+.uw-app-card > header {
+  position: relative;
+}
+
+.inline-delete-application {
+  position: absolute;
+  right: 0;
+  top: 38px;
+  padding: 6px 9px;
+  border: 1px solid #e5b8b3;
+  border-radius: 7px;
+  color: #a74e48;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.inline-delete-application:hover,
+.inline-delete-application:focus-visible {
+  color: #fff;
+  background: #a74e48;
+  outline: none;
+}
+
+.next-action button {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 720px) {
+  .inline-delete-application {
+    position: static;
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}

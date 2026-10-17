@@ -8,6 +8,7 @@ import './go-inline.css';
 import './grammarly-essay.css';
 import './floating-controls.css';
 import './application-manager.css';
+import './application-card-enhancements.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
