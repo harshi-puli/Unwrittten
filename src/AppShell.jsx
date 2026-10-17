@@ -4,7 +4,8 @@ import GoInlineExperience from './GoInlineExperience.jsx';
 import GrammarlyEssayStudio from './GrammarlyEssayStudio.jsx';
 import ApplicationManager from './ApplicationManager.jsx';
 import ApplicationCardEnhancements from './ApplicationCardEnhancements.jsx';
+import ActionHub from './ActionHub.jsx';
 
 export default function AppShell() {
-  return <><UnwrittenHackathon /><UrlImporter /><GoInlineExperience /><GrammarlyEssayStudio /><ApplicationManager /><ApplicationCardEnhancements /></>;
+  return <><UnwrittenHackathon /><UrlImporter /><GoInlineExperience /><GrammarlyEssayStudio /><ApplicationManager /><ApplicationCardEnhancements /><ActionHub /></>;
 }
