@@ -1,15 +1,20 @@
 {
-  "name": "firstpath-demo",
+  "name": "unwritten-hackathon",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -k -n web,import-api -c blue,magenta \"vite\" \"npm run server\"",
+    "server": "node server/index.js",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
+    "cheerio": "^1.0.0",
+    "concurrently": "^9.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
     "vite": "latest",
     "react": "latest",
     "react-dom": "latest"

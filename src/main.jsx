@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import UnwrittenHackathon from './UnwrittenHackathon.jsx';
+import AppShell from './AppShell.jsx';
 import './unwritten.css';
+import './url-importer.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UnwrittenHackathon />
+    <AppShell />
   </React.StrictMode>,
 );

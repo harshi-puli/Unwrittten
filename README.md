@@ -1,15 +1,25 @@
-# Firstpath
+# Unwritten
 
-Firstpath is an interactive React/Vite demo designed to help first-generation students translate college application requirements into clear explanations, manageable plans, and usable drafts.
+**Unlock the rules no one taught you.**
 
-## Included demo flows
+Unwritten is a React/Vite hackathon prototype that helps first-generation and other under-supported students understand unfamiliar academic requirements, reveal hidden expectations, create manageable plans, and write informed recommendation requests.
 
-- My Day dashboard with tasks, deadlines, and college progress
-- College application overview
-- Plain-language requirement translator
-- Editable seven-step application plan
-- Recommendation-request draft with personalization prompts
-- Task completion and draft-copy interactions
+## Working features
+
+- Shared application dashboard with two fictional colleges
+- Hidden Curriculum Decoder demo workflow
+- Reviewable task generation and task completion
+- Requirement progress synchronized with tasks
+- Recommendation-request Writing Studio
+- Optional Momentum and Opportunity Bridge support
+- Manual, honest handoff to the installed Superhuman Go **Unwritten** agent
+- Public application-page URL importer
+
+## Public URL importer
+
+The importer uses a local Express backend to fetch public HTML pages, identify likely requirements, and create a reviewable to-do list. It blocks private/local network addresses and does not support login-protected application portals.
+
+Imported information is never treated as verified automatically. Students must confirm the institution name, official deadline, requirements, and policies before adding the plan to the dashboard.
 
 ## Run locally
 
@@ -18,13 +28,13 @@ npm install
 npm run dev
 ```
 
-Open the local address printed by Vite, normally `http://localhost:5173`.
+This launches:
 
-## Production build
+- React/Vite website: `http://localhost:5173`
+- Public-page import API: `http://localhost:8787`
 
-```bash
-npm run build
-npm run preview
-```
+## Production note
 
-The current version uses illustrative local data and does not send email or call an AI API.
+A deployed version needs the Express import API hosted as a backend service. Set `VITE_IMPORT_API_URL` to that public backend URL and configure `WEB_ORIGIN` on the server to the deployed frontend origin.
+
+The prototype does not claim direct browser access to a private Superhuman Go agent API. It uses a transparent copy-to-Go handoff instead.
